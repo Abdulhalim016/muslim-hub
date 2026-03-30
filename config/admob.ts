@@ -6,10 +6,16 @@ export const ADMOB_CONFIG = {
   appId: 'ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy',
   
   // Banner Ad Unit IDs
-  bannerAdUnitId: 'ca-app-pub-3940256099942544/6300978111', // Test Banner Ad
+  bannerAdUnitId: 'ca-app-pub-3629222303889113/4427717860', // ব্যানার অ্যাড ইউনিট
   
-  // Rewarded Ad Unit ID
-  rewardedAdUnitId: 'ca-app-pub-3940256099942544/5224354917', // Test Rewarded Ad
+  // Rewarded Ad Unit ID (Image)
+  rewardedImageAdUnitId: 'ca-app-pub-3629222303889113/5020315045', // ইমেজ রিওয়ার্ডেড অ্যাড
+  
+  // Rewarded Ad Unit ID (Video)
+  rewardedVideoAdUnitId: 'ca-app-pub-3629222303889113/4297629422', // ভিডিও রিওয়ার্ডেড অ্যাড
+  
+  // Default Rewarded Ad (ভিডিও অগ্রাধিকার - বেশি আয়)
+  rewardedAdUnitId: 'ca-app-pub-3629222303889113/4297629422',
   
   // Interstitial Ad Unit ID
   interstitialAdUnitId: 'ca-app-pub-3940256099942544/1033173712', // Test Interstitial Ad
@@ -26,9 +32,10 @@ export const TEST_AD_UNITS = {
 
 // Production Ad Unit IDs (লাইভ অ্যাপের জন্য)
 export const PRODUCTION_AD_UNITS = {
-  banner: 'ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy', // আপনার Banner Ad Unit ID
+  banner: 'ca-app-pub-3629222303889113/4427717860',
+  rewardedImage: 'ca-app-pub-3629222303889113/5020315045',
+  rewardedVideo: 'ca-app-pub-3629222303889113/4297629422',
   interstitial: 'ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy', // আপনার Interstitial Ad Unit ID
-  rewarded: 'ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy', // আপনার Rewarded Ad Unit ID
 };
 
 // ============================================
@@ -36,7 +43,7 @@ export const PRODUCTION_AD_UNITS = {
 // ============================================
 export const STARTIO_CONFIG = {
   // Start.io App ID (Start.io ড্যাশবোর্ড থেকে পাবেন)
-  appId: 'YOUR_STARTIO_APP_ID',
+  appId: '202753017',
   
   // Start.io Ad Unit IDs
   bannerAdUnitId: 'YOUR_STARTIO_BANNER_AD_UNIT_ID',
@@ -80,8 +87,11 @@ export const AD_DISPLAY_SETTINGS = {
 // Reward Settings
 // ============================================
 export const REWARD_SETTINGS = {
-  // রিওয়ার্ডেড অ্যাড দেখলে কত পয়েন্ট পাবেন
-  rewardedAdPoints: 10,
+  // ভিডিও রিওয়ার্ডেড অ্যাড দেখলে কত পয়েন্ট পাবেন (বেশি আয়)
+  rewardedVideoAdPoints: 15,
+  
+  // ইমেজ রিওয়ার্ডেড অ্যাড দেখলে কত পয়েন্ট পাবেন
+  rewardedImageAdPoints: 10,
   
   // ইন্টারস্টিশিয়াল অ্যাড দেখলে কত পয়েন্ট পাবেন
   interstitialAdPoints: 5,
