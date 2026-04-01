@@ -19,8 +19,9 @@
       }
     },
     "production": {
+      "distribution": "internal",
       "android": {
-        "gradleCommand": ":app:bundleRelease"
+        "gradleCommand": ":app:assembleRelease"
       }
     }
   },
